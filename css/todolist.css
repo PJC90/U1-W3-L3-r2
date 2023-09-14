@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Cabin:wght@700&family=Montserrat:wght@700&display=swap');
+body{
+    font-family: Cabin;
+    font-size: 1.5em;
+    background-color: rgb(126, 126, 192);
+}
+.container{
+    background-color: aqua;
+    width:300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+h1{
+    padding-top: 35px;
+}
+button{
+    background-color: rgb(165, 228, 136);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+}
+#salva-lista{
+    text-align: center;
+    
+}
+input{
+    background-color: rgb(227, 223, 235);
+    color: rgb(226, 11, 11);
+    font-size: 0.7em;
+    padding: 9px;
+    border-radius: 15px;
+}
+#salva-lista button{
+    background-color: blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

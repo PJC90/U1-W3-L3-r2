@@ -11,7 +11,11 @@ newlist.addEventListener('submit', function (e) {
 
   const nuovaAreaLista = document.createElement('div')
   nuovaAreaLista.classList.add('add-class')
-  nuovaAreaLista.innerHTML = `${newOggList.Lista1} <button onclick="deleteList(event)">ELIMINA</button> <button onclick="spuntList(event)">SPUNTA</button>`
+  nuovaAreaLista.innerHTML = `
+  ${newOggList.Lista1} 
+  <button onclick="deleteList(event)">ELIMINA</button> 
+  <button onclick="spuntList(event)">SPUNTA</button>
+  `
 
   const applicoLista = document.getElementById('salva-lista')
   applicoLista.appendChild(nuovaAreaLista)
