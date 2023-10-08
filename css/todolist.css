@@ -40,3 +40,10 @@ input{
     margin-left: auto;
     margin-right: auto;
 }
+.spuntato{
+    text-decoration: line-through;
+    
+}
+.add-class{
+    font-size: 2em;
+}

@@ -1,3 +1,4 @@
+console.log('ciao')
 const newlist = document.getElementById('to-do-list')
 newlist.addEventListener('submit', function (e) {
   e.preventDefault()
@@ -12,7 +13,7 @@ newlist.addEventListener('submit', function (e) {
   const nuovaAreaLista = document.createElement('div')
   nuovaAreaLista.classList.add('add-class')
   nuovaAreaLista.innerHTML = `
-  ${newOggList.Lista1} 
+  <span>${newOggList.Lista1}</span>
   <button onclick="deleteList(event)">ELIMINA</button> 
   <button onclick="spuntList(event)">SPUNTA</button>
   `
@@ -31,6 +32,6 @@ const deleteList = function (e) {
 }
 const spuntList = function (e) {
   const spunta = e.target
-  console.log('Spuntato')
-  spunta.parentElement.style.textDecoration = 'line-through'
+  const spuntaLista = spunta.parentElement.querySelector('span')
+  spuntaLista.classList.toggle('spuntato')
 }
